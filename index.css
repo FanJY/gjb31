@@ -1,0 +1,935 @@
+*{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.slides{
+	width:100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 0 auto;
+	height:450px;
+	position:relative;
+	overflow:hidden;
+}
+.slideInner{
+	width: 100%;
+	height:450px;
+	position:relative;
+	left:0;
+	margin-left:0;
+}
+.slideInner a{
+	display:block;
+	height:450px;
+	background-size:cover;
+	background-position:center center;
+	z-index:1;
+}
+.navListBox{
+	position:absolute;
+	left:50%;
+	top:420px;
+	z-index:99;
+}
+.navListBox li{
+	width:12px;
+	height:12px;
+	float:left;
+	margin-left:5px;
+	border-radius:50%;
+	overflow:hidden;
+}
+.navListBox li:first-child{
+	margin-left:0;
+}
+.navListBox li a{
+	display:block;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	background-color:#fff;
+	opacity: 0.9;
+
+}
+.navListBox li a.active{
+	background-color:#78696a;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+}
+.yypk-top{
+	width: 100%;
+	height: 30px;
+	background-color: #78696a;
+}
+.navi{
+	width: 100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 70px;
+	overflow: hidden;
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	background-size: 130px 50px;
+	background-position: 20px 10px;
+}
+.yypk-logo{
+	width: 180px;
+	height: 70px;
+	float: left;
+}
+.nav-child{
+	display: block;
+	text-decoration:none;
+	width: 100px;
+	line-height: 70px;
+	text-align: center;
+	float: right;
+	font-size: 16px;
+	color: #a39d9d;
+	color: rgba(83, 73, 73, 0.54);
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+.nav-word{
+	font-size: 18px;
+	font-weight: 500;
+	color: #78696a;
+}
+.banner1{
+	width: 100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 450px;
+	background-image: url(images/banner1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.banner02{
+	background-image: url(images/banner02.jpg);
+}
+.banner03{
+	background-image: url(images/banner03.jpg);
+}
+.zlogo{
+	width: 300px;
+	height: 100px;
+	background-image: url(images/banner03logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner{
+	width: 100%;
+	min-width: 980px;
+	height: 380px;
+	margin-bottom: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+}
+.yypk-word{
+	width: 980px;
+	margin: 30px auto;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2;
+	text-align: center;
+	color: #666666;
+}
+.yypk-zpk{
+	width: 980px;
+	height: 203px;
+	overflow: hidden;
+	margin: 0 auto 45px;
+}
+.zpk{
+	display: block;
+	max-width: 300px;
+	width: 30%;
+	height: 197px;
+  	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  	float: left;
+  	background-repeat: no-repeat;
+  	background-position: center 29px;
+  	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration : none;
+	font-style: normal;
+	font-stretch: normal;
+	color: #78696a;
+	text-align: center;
+	line-height: 325px;
+	margin-top: 3px;
+}
+.yypk-z{
+	background-image: url(images/z.png);
+	margin-left: 1%;
+}
+.yypk-p{
+	margin: 3px 4%;
+	background-image: url(images/p.png);
+}
+.yypk-k{
+	background-image: url(images/k.png);
+}
+.yypk-footer{
+	width: 100%;
+	min-width: 980px;
+	height: 50px;
+	line-height: 50px;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #ffffff;
+	background-color: #78696a;
+	/*background-image: url(images/yypk-footer.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 70px;*/
+}
+.banner2{
+	background-image: url(images/banner2.jpg);
+}
+.yykp-qyjs{
+	width: 100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+.yypk-qyjs-left{
+	width: 20%;
+	float: left;
+	height: 300px;
+	background-image: url(images/yypk-qyjs-left.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.yypk-qyjs-right{
+	width: 75%;
+	float: left;
+}
+.yypk-qyjs-word1{
+	width: 100%;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #666666;
+	margin: 0 auto;
+}
+.yypk-qyjs-word1 span{
+	font-size: 20px;
+}
+.yypk-qyjs-img{
+	width: 100%;
+	overflow: hidden;
+	margin: 40px 0;
+}
+.qyjs-imgs{
+	width: 29%;
+	height: 350px;
+	float: left;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.qyjs-img-a{
+	margin-top: 30px;
+	background-image: url(images/qyjs-img-a.jpg);
+}
+.qyjs-img-b{
+	width: 32%;
+	margin: 0 5%;
+	height: 380px;
+	box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.31);
+	background-image: url(images/qyjs-img-b.jpg);
+}
+.qyjs-img-c{
+	margin-top: 30px;
+	background-image: url(images/qyjs-img-c.jpg);
+}
+.banner3{
+	background-image: url(images/banner3.jpg);
+}
+.yypk-fzlc{
+	width: 100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 50px auto 100px;
+	overflow: hidden;
+}
+.yypk-fzlc-title{
+	width: 30%;
+	height: 320px;
+	float: left;
+	background-image: url(images/banner4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.yypk-fzlc-content{
+	width: 20%;
+	height: 600px;
+	float: left;
+	background-image: url(images/fzlc.jpg);
+	background-repeat: no-repeat;
+	background-position: right 15px;
+}
+.yypk-fzlc-word{
+	width: 45%;
+	float: left;
+	margin-left: 5%;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #666666;
+}
+.yypk-fzlc-word span{
+	font-size: 20px;
+	color: #faae54;
+}
+.banner5{
+	background-image: url(images/banner5.jpg);
+}
+.yypk-ppys{
+	width: 100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 50px auto; 
+	overflow: hidden;
+}
+.yypk-ppys-left{
+	width: 18%;
+	height: 320px;
+	background-image: url(images/yypk-ppys-left.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.yypk-ppys-right{
+	width: 80%;
+	float: left;
+	overflow: hidden;
+}
+.ppys-child{
+	width: 23%;
+	height: 100%;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 70px;
+}
+.ppys-child-top{
+	width: 82px;
+	height: 82px;
+	border-radius: 50%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.ppys-child-title{
+	width: 100%;
+	line-height: 25px;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 18px;
+	color: #534949;
+	margin: 8px auto;
+	text-align: center;
+}
+.ppys-child-border{
+	width: 70%;
+	border: 1px #dddddd solid;
+	margin: 0 auto;
+}
+.ppys-child-word{
+	padding: 15px;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	text-align: justify;
+	color: #666666;
+}
+@media screen and (max-width: 1200px){
+	.ppys-child-top{
+    	width: 90px;
+    	height: 90px;
+    }
+    .ppys-child-border{
+    	width: 80%;
+    	height: 200px;
+    }
+
+}
+@media screen and (min-width:1200px){
+
+    .ppys-child-border{
+    	height: 205px;
+
+    }
+
+}
+.ppys1{
+	background-image: url(images/ppys1.png);
+}
+.ppys2{
+	background-image: url(images/ppys2.png);
+}
+.ppys3{
+	background-image: url(images/ppys3.png);
+}
+.ppys4{
+	background-image: url(images/ppys4.png);
+}
+.ppys5{
+	background-image: url(images/ppys5.png);
+}
+.ppys6{
+	background-image: url(images/ppys6.png);
+}
+.ppys7{
+	background-image: url(images/ppys7.png);
+}
+.ppys8{
+	background-image: url(images/ppys8.png);
+}
+.banner7{
+	background-image: url(images/banner7.jpg);
+}
+.yypk-hzjm{
+	width: 100%;
+	height: 300px;
+	min-width: 980px;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto 100px;
+}
+.hzjm-child{
+	width: 40%;
+	float: left;
+}
+.hzjm-child-title{
+	width: 100%;
+	height: 52px;
+	overflow: hidden;
+}
+.hzjm-child-img{
+	display: block;
+	width: 75px;
+	height: 52px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 20px;
+}
+.hci1{
+	background-image: url(images/hci1.png);
+}
+.hci2{
+	background-image: url(images/hci2.png);
+}
+.hci3{
+	background-image: url(images/hci3.png);
+}
+.hci4{
+	background-image: url(images/hci4.png);
+}
+.hzjm-child-word{
+	float: left;
+	line-height: 52px;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	color: #78696a;
+	font-size: 30px;
+}
+.hzjm-word{
+	width: 100%;
+	height: 140px;
+	margin-top: 40px;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #666666;
+}
+.yypk-hzjm-img{
+	width: 45%;
+	height: 260px;
+	float: left;
+	margin-top: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.yhi1{
+	background-image: url(images/yhi1.png);
+}
+.yhi2{
+	background-image: url(images/yhi2.png);
+}
+.yhi3{
+	background-image: url(images/yhi3.jpg);
+}
+.yypk-jmzc{
+	width: 100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding:20px 0 40px;
+}
+.yykp-hzhb-title{
+	overflow: hidden;
+	width: 220px;
+	margin: 0 auto 60px;
+}
+.yypk-hzhb-parent{
+	width: 100%;
+	overflow: hidden;
+}
+.yypk-hzhb{
+	width: 25%;
+	float: left;
+}
+.yypk-hzhb-child{
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	color: #666666;
+	line-height: 1.5;
+	text-indent: 40px;
+}
+@media screen and (max-width:1200px){
+
+    .yypk-hzhb-child{
+    	text-indent: 20px;
+    }
+}
+.banner8{
+	background-image: url(images/banner8.jpg);
+}
+.yypk-fddz{
+	width: 100%;
+	height: 835px;
+	min-width: 980px;
+	background-image: url(images/fddz.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 50px;
+}
+.banner9{
+	background-image: url(images/banner9.jpg);
+}
+.banner10{
+	background-image: url(images/banner10.jpg);
+	margin-top: 50px;
+}
+.banner11{
+	background-image: url(images/banner11.jpg);
+}
+.banner12{
+	background-image: url(images/banner12.jpg);
+}
+.yypk-yyp{
+	width: 1210px;
+	min-width: 980px;
+	margin: 0 auto;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 30px;
+}
+.banner13{
+	background-image: url(images/banner13.jpg);
+}
+.banner14{
+	background-image: url(images/banner14.jpg);
+	height: 520px;
+}
+.banner15{
+	background-image: url(images/banner15.jpg);
+}
+.banner16{
+	background-image: url(images/banner16.jpg);
+}
+.banner17{
+	background-image: url(images/banner17.jpg);
+	margin-bottom: 30px;
+}
+.banner18{
+	background-image: url(images/banner18.jpg);
+}
+.banner19{
+	background-image: url(images/banner19.jpg);
+}
+.banner20{
+	background-image: url(images/banner20.jpg);
+}
+.yypk{
+	width: 100%;
+	height: 42px;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	font-size: 30px;
+	color: #78696a;
+	text-align: center;
+	line-height: 42px;
+	margin: 30px auto;
+}
+.yy{
+	width: 188px;
+	height: 71px;
+	margin: 50px auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.yypk-yyz{
+	width: 100%;
+	min-width: 980px;
+	max-width: 1200px;
+	margin: 0 auto 50px;
+	overflow: hidden;
+}
+.yyz{
+	background-image: url(images/yyz.png);
+}
+.yyz-work{
+	width: 35%;
+	height: 260px;
+	float: left;
+	margin-top: 59px;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	border: 1px #999 solid;
+	font-size: 14px;
+	line-height: 2.1;
+	text-align: justify;
+	color: #666666;
+}
+.yyz-works{
+	height:210px;
+	margin-top: 85px; 
+}
+.yyz-work-child{
+	padding: 30px;
+}
+.yyz-img{
+	width: 60%;
+	height: 380px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.yyp{
+	background-image: url(images/yyp.png);
+}
+.yyk{
+	background-image: url(images/yyk.png);
+}
+@media screen and (min-height:983px){
+
+    .yypk-footer-abc{
+    	position: absolute;
+    	left: 0;
+    	bottom: 0;
+    }
+}
+@media screen and (max-width:1210px){
+
+    .banner{
+    	height: 308px;
+    	background-size: 980px auto;
+    }
+    .banner14{
+    	height: 425px;
+    }
+    .yypk-yyp{
+    	width: 980px;
+    }
+    .yypk-yyz{
+    	width: 980px;
+    }
+    .yyz-img{
+    	height: 308px;
+    }
+    .yyz-work{
+    	height: 228px;
+    	margin-top: 39px;
+    	line-height: 24px;
+    }
+    .yyz-works{
+    	height: 182px;
+    	margin-top: 63px;
+    }
+    .yyz-work-child{
+    	padding: 20px;
+    }
+}
+.phone-navi{
+	display: none;
+}
+@media screen and (max-width:430px){
+	.nav-child{
+		display: none;
+	}
+	.navi{
+		min-width: inherit;
+	}
+	.phone-nav{
+		width: 60px;
+		height: 70px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-image: url(images/phone-nav.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 24px;
+	}
+	.phone-navi{
+		width: 100px;
+		position: absolute;
+		top: 100px;
+		right: 0;
+		background-color: #78696a;
+		opacity: 0.8;
+		z-index: 999;
+	}
+	.phone-nav-child{
+		width: 100%;
+		text-decoration: none;
+	    line-height: 45px;
+	    text-align: center;
+	    float: right;
+	    font-size: 16px;
+	    color: #fff;
+	    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+		border-bottom: 1px #fff solid;
+	}
+	.slides{
+		height: 200px;
+		min-width: inherit;
+	}
+	.slideInner{
+		height: 200px;
+	}
+	.slideInner a{
+		height: 200px;
+	}
+	.navListBox{
+		top: 180px;
+	}
+	.yypk-word{
+		width: 90%;
+		margin: 30px auto;
+		font-size: 14px;
+	}
+	.yypk-zpk{
+		width: 100%;
+		height: 100%;
+	}
+	.zpk{
+		width: 80%;
+		float: none;
+		margin: 0 auto 20px;
+		max-width: inherit;
+	}
+	.yypk-footer{
+		min-width: inherit;
+	}
+	.yykp-qyjs{
+		min-width: inherit;
+	}
+	.yypk-qyjs-left{
+		display: none;
+	}
+	.yypk-qyjs-right{
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.banner1{
+		min-width: inherit;
+		height: 200px;
+	}
+	.qyjs-imgs{
+		float: none;
+		width: 100%;
+	}
+	.qyjs-img-a{
+		margin-top: 0;
+	}
+	.qyjs-img-b{
+		margin: 20px 0;
+	}
+	.qyjs-img-c{
+		margin: 0;
+	}
+	.yypk-fzlc{
+		min-width: inherit;
+	}
+	.yypk-fzlc-title{
+		display: none;
+	}
+	.yypk-fzlc-content{
+		width: 40%;
+	}
+	.yypk-fzlc-word{
+		width: 50%;
+	}
+	.yypk-ppys{
+		min-width: inherit;
+	}
+	.yypk-ppys-left{
+		display: none;
+	}
+	.yypk-ppys-right{
+		width: 100%;
+		padding-left: 4%;
+	}
+	.ppys-child{
+		width: 44%;
+		margin-right: 4%;
+	}
+	.ppys-child-border{
+		height: auto;
+	}
+	.yypk-hzjm{
+		min-width: inherit;
+		height: 80%;
+		margin: 0;
+	}
+	.hzjm-child{
+		float: none;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.hzjm-word{
+		height: auto;
+		margin-left: 2%;
+		width: 97%;
+	}
+	.yypk-hzjm-img{
+		margin-top: 20px;
+		float: none;
+		width: 96%;
+	}
+	.yhi1{
+		margin-left: 2%;
+	}
+	.hzjm-child-title{
+		margin-top: 20px;
+		margin-left: 2%;
+	}
+	.hzjm-child-word{
+		font-size: 24px;
+	}
+	.hzjm-word{
+		margin-top: 30px;
+	}
+	.yypk-jmzc{
+		min-width: inherit;
+	}
+	.yykp-hzhb-title{
+		margin: 20px;
+	}
+	.yypk-hzhb{
+		width:100%;
+		margin-bottom: 20px;
+	}
+	.yypk-fddz{
+		min-width: inherit;
+	}
+	.banner{
+		width: 100%;
+		margin: 0 auto;
+		min-width: inherit;
+		height: 200px;
+	}
+	.yypk-yyz{
+		min-width: inherit;
+		width: 100%;
+		margin: 0 auto 20px;
+	}
+	.yyz-work{
+		float: none;
+		width: 90%;
+		margin: 20px auto;
+	}
+	.yyz-works{
+		margin-right: 5%;
+	}
+	.yyz-img{
+		width: 90%;
+		height: 200px;
+	}
+	.banner18{
+		margin-right: 5%;
+	}
+	.banner19{
+		width: 90%;
+	}
+	.banner20{
+		margin-left: 5%;
+		margin-top: 20px;
+	}
+	.yy{
+		margin: 20px auto;
+	}
+	.yypk-yyp{
+		min-width: inherit;
+		width: 90%;
+		margin: 30px auto;
+	}
+	.banner10{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.banner11{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.banner12{
+		width: 90%;
+		margin: 30px auto;
+	}
+	.banner14{
+		width: 90%;
+		margin: 0 auto 30px;
+	}
+	.banner15{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.banner16{
+		width: 90%;
+		margin: 0 auto 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

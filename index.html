@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>悠悠品客</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="phone-nav" id="chick-nav"></div>
+	<div class="navi">
+		<a href="./index.html" class="yypk-logo"></a>
+		<a href="./home.html" class="nav-child">联系我们</a>
+		<a href="./union.html" class="nav-child">合作联盟</a>
+		<a href="./advantage.html" class="nav-child">品牌优势</a>
+		<a href="./course.html" class="nav-child">发展历程</a>
+		<a href="./introduce.html" class="nav-child">企业介绍</a>
+		<a href="./index.html" class="nav-child nav-word">首页</a>
+	</div>
+	<div class="phone-navi" id="chick-nav-child">
+		<a href="./index.html" class="phone-nav-child nav-word">首页</a>
+		<a href="./introduce.html" class="phone-nav-child">企业介绍</a>
+		<a href="./course.html" class="phone-nav-child">发展历程</a>
+		<a href="./advantage.html" class="phone-nav-child">品牌优势</a>
+		<a href="./union.html" class="phone-nav-child">合作联盟</a>		
+		<a href="./home.html" class="phone-nav-child">联系我们</a>
+	</div>
+	<div class="yypk-top"></div>
+	<div class="slides">
+		<div class="slideInner">
+			<a href="#" class="banner1"></a>
+			<a href="#" class="banner1 banner02"></a>
+			<a href="#" class="banner1 banner03">
+				<div class="zlogo"></div>
+			</a>
+		</div>
+	</div>
+	<div class="yypk-word">
+		优优品客以“轻奢文化”为标准，打造中国轻奢连锁酒店第一品牌由国内知名设计师集群共建轻奢文化连锁酒店品牌。现分为悠悠住、悠悠品、悠悠客三个类别，致力于创造不同主流消费人群的个性旅行体验空间，发展周边旅行消费，文创体验社交。
+	</div>
+	<div class="yypk-zpk">
+		<a href="./yyz.html" class="zpk yypk-z">悠悠住  轻奢酒店</a>
+		<a href="./yyp.html" class="zpk yypk-p">悠悠品  文创体验</a>
+		<a href="./yyk.html" class="zpk yypk-k">悠悠客  精选周边</a>
+	</div>
+	<div class="yypk-footer yypk-footer-abc">
+		Copyright © 2014–2016 悠悠住北京酒店管理有限公司 , All Rights Reserved 京ICP备16055242号-1
+	</div>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="slide.js"></script>
+	<script >
+		$(document).ready(function() {
+			$(".slideInner").slide({
+				slideContainer: $('.slideInner a'),
+				effect: 'easeOutCirc',
+				autoRunTime: 5000,
+				slideSpeed: 1000,
+				autoRun: true
+			})
+		})
+	</script>
+	<script>
+		var tt = document.getElementById('chick-nav');
+		var gg = document.getElementById('chick-nav-child');
+		tt.onclick = function() { 
+			if (tt.classList.contains('abc')==true) {
+				gg.style.display = "none"; 
+				tt.setAttribute("class", "phone-nav");
+				tt.style.backgroundImage = 'url(images/phone-nav.png)';
+			}else{
+				gg.style.display = "block"; 
+				tt.setAttribute("class", "phone-nav abc"); 
+				tt.style.backgroundImage = 'url(images/off-nav.png)';
+			}
+		}
+	</script>
+</body>
+</html>

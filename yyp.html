@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>悠悠品客</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+
+</head>
+<body>
+	<div class="phone-nav" id="chick-nav"></div>
+	<div class="navi">
+		<a href="./index.html" class="yypk-logo"></a>
+		<a href="./home.html" class="nav-child">联系我们</a>
+		<a href="./union.html" class="nav-child">合作联盟</a>
+		<a href="./advantage.html" class="nav-child">品牌优势</a>
+		<a href="./course.html" class="nav-child">发展历程</a>
+		<a href="./introduce.html" class="nav-child">企业介绍</a>
+		<a href="./index.html" class="nav-child nav-word">首页</a>
+	</div>
+	<div class="phone-navi" id="chick-nav-child">
+		<a href="./index.html" class="phone-nav-child nav-word">首页</a>
+		<a href="./introduce.html" class="phone-nav-child">企业介绍</a>
+		<a href="./course.html" class="phone-nav-child">发展历程</a>
+		<a href="./advantage.html" class="phone-nav-child">品牌优势</a>
+		<a href="./union.html" class="phone-nav-child">合作联盟</a>		
+		<a href="./home.html" class="phone-nav-child">联系我们</a>
+	</div>
+	<div class="yypk-top"></div>
+	<div class="banner1 banner9"></div>
+	<div class="yy yyp"></div>
+	<div class="banner banner10"></div>
+	<div class="yypk-yyp">
+		YO-YO 品，以轻奢文化为核心，汇集更多价值观相同的文化创意产品，打造体验式产品电商平台。并通过酒店的产品体验，实现电商导流，最终形成O2O商业形式。通过YO-YO 品的后台管理与运营与其品牌商、悠悠客、创客、设计师、大学生、OEM厂商等，形成文化，互动，调研，开发，创意，生产，打造YO-YO 品的良性业态发展。
+		</br>
+		</br>
+		优优品客以酒店服务管理为背景，加盟连锁发展快速扩张。利用酒店的特殊属性为载体，将文创体验产品通过空间设计融合在酒店环境当中，实现O2O模式的电商引导与销售，解决当下互联网电商平台体验式产品销售瓶颈。
+	</div>
+	<div class="banner banner11"></div>
+	<div class="banner banner12"></div>
+	<div class="yypk-footer">
+		Copyright © 2014–2016 悠悠住北京酒店管理有限公司 , All Rights Reserved 京ICP备16055242号-1
+	</div>
+	<script>
+		var tt = document.getElementById('chick-nav');
+		var gg = document.getElementById('chick-nav-child');
+		tt.onclick = function() { 
+			if (tt.classList.contains('abc')==true) {
+				gg.style.display = "none"; 
+				tt.setAttribute("class", "phone-nav");
+				tt.style.backgroundImage = 'url(images/phone-nav.png)';
+			}else{
+				gg.style.display = "block"; 
+				tt.setAttribute("class", "phone-nav abc"); 
+				tt.style.backgroundImage = 'url(images/off-nav.png)';
+			}
+		}
+	</script>
+</body>
+</html>

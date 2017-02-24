@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>悠悠品客</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+
+</head>
+<body>
+	<div class="phone-nav" id="chick-nav"></div>
+	<div class="navi">
+		<a href="./index.html" class="yypk-logo"></a>
+		<a href="./home.html" class="nav-child">联系我们</a>
+		<a href="./union.html" class="nav-child">合作联盟</a>
+		<a href="./advantage.html" class="nav-child">品牌优势</a>
+		<a href="./course.html" class="nav-child">发展历程</a>
+		<a href="./introduce.html" class="nav-child">企业介绍</a>
+		<a href="./index.html" class="nav-child nav-word">首页</a>
+	</div>
+	<div class="phone-navi" id="chick-nav-child">
+		<a href="./index.html" class="phone-nav-child nav-word">首页</a>
+		<a href="./introduce.html" class="phone-nav-child">企业介绍</a>
+		<a href="./course.html" class="phone-nav-child">发展历程</a>
+		<a href="./advantage.html" class="phone-nav-child">品牌优势</a>
+		<a href="./union.html" class="phone-nav-child">合作联盟</a>		
+		<a href="./home.html" class="phone-nav-child">联系我们</a>
+	</div>
+	<div class="yypk-top"></div>
+	<div class="banner1 banner3"></div>
+	<div class="yypk-fzlc">
+		<div class="yypk-fzlc-title"></div>
+		<div class="yypk-fzlc-content"></div>
+		<div class="yypk-fzlc-word">
+			<span>2014</span>年KEVIN设计师团队，创想昨日屌丝一族的季后篇。
+			<br/>2014年10月01日，北京八间模拟样板酒店落地。
+			<br/>2014年11月10日，浙江舟山加盟店投资建设。
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span>2015</span>年04月18日，浙江舟山加盟店开始试营业
+			<br/>2015年09月10日，悠悠住酒店管理公司成立
+			<br/>2015年10月24日，北京南锣鼓巷分店获得投资建设
+			<br/>2015年11月12日，北京丽泽商务分店获得投资建设
+			<br/>2015年12月27日，北京南三环丽泽商务店开业
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<span>2016</span>年10月，四川分公司成立
+			<br/>2016年01月29日，北京南锣鼓巷店开业
+			<br/>2016年05月01日，云南昆明北京路店品牌加盟合作
+			<br/>2016年06月05日，自主开发YOYO PINKE平台软件
+			<br/>2016年08月12日，成都酒店协会达成品牌发展战略合作协议
+			<br/>2016年09月01日，与雷锋资本达成合作自主开发PMS系统
+			<br/>2016年10月01日，第一代YOYO PINKE平台推向市场试用
+		</div>
+	</div>
+	<div class="yypk-footer">
+		Copyright © 2014–2016 悠悠住北京酒店管理有限公司 , All Rights Reserved 京ICP备16055242号-1
+	</div>
+	<script>
+		var tt = document.getElementById('chick-nav');
+		var gg = document.getElementById('chick-nav-child');
+		tt.onclick = function() { 
+			if (tt.classList.contains('abc')==true) {
+				gg.style.display = "none"; 
+				tt.setAttribute("class", "phone-nav");
+				tt.style.backgroundImage = 'url(images/phone-nav.png)';
+			}else{
+				gg.style.display = "block"; 
+				tt.setAttribute("class", "phone-nav abc"); 
+				tt.style.backgroundImage = 'url(images/off-nav.png)';
+			}
+		}
+	</script>
+</body>
+</html>

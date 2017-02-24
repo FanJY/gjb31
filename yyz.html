@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>悠悠品客</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+
+</head>
+<body>
+	<div class="phone-nav" id="chick-nav"></div>
+	<div class="navi">
+		<a href="./index.html" class="yypk-logo"></a>
+		<a href="./home.html" class="nav-child">联系我们</a>
+		<a href="./union.html" class="nav-child">合作联盟</a>
+		<a href="./advantage.html" class="nav-child">品牌优势</a>
+		<a href="./course.html" class="nav-child">发展历程</a>
+		<a href="./introduce.html" class="nav-child">企业介绍</a>
+		<a href="./index.html" class="nav-child nav-word">首页</a>
+	</div>
+	<div class="phone-navi" id="chick-nav-child">
+		<a href="./index.html" class="phone-nav-child nav-word">首页</a>
+		<a href="./introduce.html" class="phone-nav-child">企业介绍</a>
+		<a href="./course.html" class="phone-nav-child">发展历程</a>
+		<a href="./advantage.html" class="phone-nav-child">品牌优势</a>
+		<a href="./union.html" class="phone-nav-child">合作联盟</a>		
+		<a href="./home.html" class="phone-nav-child">联系我们</a>
+	</div>
+	<div class="yypk-top"></div>
+	<div class="banner banner17"></div>
+	<div class="yy yyz"></div>
+	<div class="yypk-yyz">
+		<div class="yyz-work">
+			<div class="yyz-work-child">
+				YO-YO HOTEL，以轻奢文化打造酒店品牌，汇集价值观相同的受众群体。利用酒店实体空间，电视，OTA渠道，网络平台等等商业广告宣传价值，汇集YO-YO品，提升酒店的附加值，在客人支付的单一酒店住宿费用基础之上，享受更大的受益空间，入住期间免费试用于房间的每一样创意产品，为YO-YO 品线上商城实现导流，与此同时增强酒店的市场竞争生命力。
+			</div>
+		</div>
+		<div class="yyz-img banner18" style="float: right;"></div>
+	</div>
+	<div class="banner banner19"></div>
+	<div class="yypk-yyz">
+		<div class="yyz-img banner20"></div>
+		<div class="yyz-work yyz-works" style="float: right;">
+			<div class="yyz-work-child">
+				优优品客打破传统快捷酒店标准模式化，解决空间枯燥，服务质感下降，白热化价格竞争等问题。为旅行中的“轻奢一族”提供更多个性化空间体验。YO-YO HOTEL轻奢酒店以体量小、品质高、产品个性、投资少、回报快运营透明的几大优势开辟酒店行业的蓝海市场。
+			</div>
+		</div>
+	</div>
+	<div class="yypk-footer">
+		Copyright © 2014–2016 悠悠住北京酒店管理有限公司 , All Rights Reserved 京ICP备16055242号-1
+	</div>
+	<script>
+		var tt = document.getElementById('chick-nav');
+		var gg = document.getElementById('chick-nav-child');
+		tt.onclick = function() { 
+			if (tt.classList.contains('abc')==true) {
+				gg.style.display = "none"; 
+				tt.setAttribute("class", "phone-nav");
+				tt.style.backgroundImage = 'url(images/phone-nav.png)';
+			}else{
+				gg.style.display = "block"; 
+				tt.setAttribute("class", "phone-nav abc"); 
+				tt.style.backgroundImage = 'url(images/off-nav.png)';
+			}
+		}
+	</script>
+</body>
+</html>

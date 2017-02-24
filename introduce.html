@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>悠悠品客</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+
+</head>
+<body>
+	<div class="phone-nav" id="chick-nav"></div>
+	<div class="navi">
+		<a href="./index.html" class="yypk-logo"></a>
+		<a href="./home.html" class="nav-child">联系我们</a>
+		<a href="./union.html" class="nav-child">合作联盟</a>
+		<a href="./advantage.html" class="nav-child">品牌优势</a>
+		<a href="./course.html" class="nav-child">发展历程</a>
+		<a href="./introduce.html" class="nav-child">企业介绍</a>
+		<a href="./index.html" class="nav-child nav-word">首页</a>
+	</div>
+	<div class="phone-navi" id="chick-nav-child">
+		<a href="./index.html" class="phone-nav-child nav-word">首页</a>
+		<a href="./introduce.html" class="phone-nav-child">企业介绍</a>
+		<a href="./course.html" class="phone-nav-child">发展历程</a>
+		<a href="./advantage.html" class="phone-nav-child">品牌优势</a>
+		<a href="./union.html" class="phone-nav-child">合作联盟</a>		
+		<a href="./home.html" class="phone-nav-child">联系我们</a>
+	</div>
+	<div class="yypk-top"></div>
+	<div class="banner1 banner2"></div>
+	<div class="yykp-qyjs">
+		<div class="yypk-qyjs-left"></div>
+		<div class="yypk-qyjs-right">
+			<div class="yypk-qyjs-word1">
+				<span>优优品客</span>（北京）酒店管理有限公司成立于2014年，在中国•北京由当代知名设计师集群共同创建，是一家专门从事酒店投资、筹建和运营管理相关服务的专业化集团化公司。集团旗下涉及产业有资本投资、文化传播、建筑规划、室内设计、空间配饰、旅游发展、产品开发、信息服务、酒店管理学院及产、学、融新领域共创金融平台。悠悠住轻奢连锁酒店致力打造成为中国第一家轻奢连锁酒店品牌。
+			</div>
+			<div class="yypk-qyjs-img">
+				<div class="qyjs-imgs qyjs-img-a"></div>
+				<div class="qyjs-imgs qyjs-img-b"></div>
+				<div class="qyjs-imgs qyjs-img-c"></div>
+			</div>
+			<div class="yypk-qyjs-word1">
+				两年来，<span>优优品客</span>凭借创办团队及合伙人多年酒店管理运营的深厚积淀，秉承年轻、共创、共赢的企业精神，先后与中关村创新促进会、四川省酒店协会、雷锋资本、旅搜网等达成战略合作，与每一位合作者协同发展，提供专业而高效的管理团队、，成熟和完善的运营机制、强大的行业资源的支持，帮助成员酒店成功实现成本控制，营收多元化，利润明显增长的显著成果。优优品客的标准就是一个联手、一个共创，合作利他、发展共赢，共同打造全新城市文化旅游生态服务平台。
+			</div>
+		</div>
+		
+	</div>
+	<div class="yypk-footer">
+		Copyright © 2014–2016 悠悠住北京酒店管理有限公司 , All Rights Reserved 京ICP备16055242号-1
+	</div>
+	<script>
+		var tt = document.getElementById('chick-nav');
+		var gg = document.getElementById('chick-nav-child');
+		tt.onclick = function() { 
+			if (tt.classList.contains('abc')==true) {
+				gg.style.display = "none"; 
+				tt.setAttribute("class", "phone-nav");
+				tt.style.backgroundImage = 'url(images/phone-nav.png)';
+			}else{
+				gg.style.display = "block"; 
+				tt.setAttribute("class", "phone-nav abc"); 
+				tt.style.backgroundImage = 'url(images/off-nav.png)';
+			}
+		}
+	</script>
+</body>
+</html>
